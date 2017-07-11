@@ -1,0 +1,463 @@
+	<!DOCTYPE HTML>
+<head>
+
+    <meta charset="utf-8" />
+<!-- 	<meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes">
+	 -->	
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	 <title>Lelang Today</title>
+    
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/components/icon.min.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/components/dropdown.min.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/components/image.min.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/components/segment.min.css"/>
+ 
+<link href="oswald.css" rel="stylesheet">
+
+<!--  <script src="http://103.31.132.178:8030/socket.io/socket.io.js"></script> -->
+
+    <script src="js/jquery.min.js"></script> 
+
+	<script src="js/jquery.touchSwipe.min.js"></script>
+
+    <script src="js/countdown.js"></script> 
+
+    <style>
+        #body_list  {
+            /*background: #222;*/
+        }
+
+    .box-header {
+        background : #777;
+    }
+
+    .item.content-box {
+        background : #ccc !important;
+    }
+    .item_container {
+        border: 1px outset #777;
+        padding-top:4px;
+        padding-bottom: 6px;
+    }
+
+
+
+    ::-webkit-scrollbar {
+        width: 0px;  
+        background: transparent;  
+    }
+/*
+    html {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #FF0000;
+    }
+*/
+    </style>
+
+</head>
+
+<body>
+
+    <!-- START BODY -->
+
+    <div class="main ui container" id=body_list style="width:100%;z-index:99999;margin-top:35px"> 
+        
+
+
+<div class="ui vertical menu" style=width:120%;background-color:#555>
+
+        <!-- HEADER OF WATCH SEGMENT -->        
+        <div class="ui left aligned container" >
+            <h4 style="margin-left:6px;font-size:15px;font-family:verdana;color:#ededf3;text-shadow:1px 1px 1px rgba(77,77,77,0.4);margin-top:6px;margin-bottom:6px;">
+                WATCHED ITEM
+            </h4>
+        </div>
+
+        <div class=item_container>
+
+            <!-- upper row of item -->
+            <div class="ui two column grid">
+
+                <!-- thumbnail -->
+                <div class="four wide column" style=padding-right:0px>
+                    <div class="ui left tiny images">
+                        <img src="images/s-l1605.jpg" >
+                    </div>
+                </div>
+
+                <!-- description panel -->
+                <div class="seven wide column" style=padding-right:0px>
+                    
+                    <!-- Judul -->
+                    <div class="ui box-header" >
+                        NECA Predator 18"
+                    </div>
+
+                    <!-- Price and Button -->
+                    <div class="item content-box" style=background:#fbfbfc;>
+                        <div class="ui grid">
+                            
+                                <h5 style=color:#999;margin-top:15px;font-weight:normal;>
+                                    <strong> Rp. 90.000</strong>
+                                </h5>        
+                            
+
+                            
+                                <div class="right floated column">
+                                    <button style=height:40px class='ui button orange floated right'>
+                                        Q.B
+                                    </button>                
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- end of upper row -->
+
+
+            <div class="ui three column grid" style=margin-top:-10px;margin-bottom:5px;height:10px;>
+
+                <div class=column>
+                </div>
+
+                <div class=column>
+                  <h4 style=font-size:15px;color:red>  16h:25m </h4>
+                </div>
+
+                <div class=column>
+                </div>
+            </div>
+
+
+            <!-- action buttons row -->
+            <div class="ui four column grid">
+
+                <div class="column">
+                    <button class="unwatchBtn ui tiny red button" >
+                        Unwatched
+                    </button>
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="six wide column">
+                    <button class="BIN ui tiny gray button" >
+                        Request BIN
+                    </button>
+                </div>               
+
+
+            </div>
+
+        </div>
+
+
+<!-- new style -->
+
+		<div class=item_container style=padding-left:0px>
+  <div class="content">
+    <div class="header" style="color:white;padding-left:2px;padding-bottom:3px">
+	<h4>Eto Misa PP</h4>
+	</div>
+  </div>
+
+<div class="ui attached message" style=padding:0px;margin-top:0px>
+	<div class="ui two column grid" style=height:55px;>
+		<div class="five wide column" style=padding:0px>
+			<div class="ui left tiny images" style="text-align:center">
+				<img src="images/eto.jpg" style="max-height:100%;">
+			</div>
+		</div>
+		<div class="nine wide column" style=padding-right:0px>	
+			<div class="header">
+				<h1 style=color:red>10m : 20s </h1>
+			</div>	
+		</div>
+	</div>
+	<!-- <p>Fill out the form below to sign-up for a new account</p> -->
+</div>
+<form class="ui form attached fluid segment">
+	<div class="ui black submit button">+ BID</div>
+	<div class="ui orange submit button">Quick Bid</div>
+	<i class="green eye icon big"></i>
+</form>
+		</div>
+
+
+
+		<div class=item_container style=padding-left:0px>
+  <div class="content">
+    <div class="header" style="color:white;padding-left:2px;padding-bottom:3px">
+	<h4>Eto Misa PP</h4>
+	</div>
+  </div>
+
+<div class="ui attached message" style=padding:0px;margin-top:0px>
+	<div class="ui two column grid" style=height:55px;>
+		<div class="five wide column" style=padding:0px>
+			<div class="ui left tiny images" style="text-align:center">
+				<img src="images/eto.jpg" style="max-height:100%;">
+			</div>
+		</div>
+		<div class="nine wide column" style=padding-right:0px>	
+			<div class="header">
+				<h1 style=color:red>10m : 20s </h1>
+			</div>	
+		</div>
+	</div>
+	<!-- <p>Fill out the form below to sign-up for a new account</p> -->
+</div>
+<form class="ui form attached fluid segment">
+	<div class="ui violet submit button">+ BID</div>
+	<div class="ui red submit button">Quick Bid</div>
+</form>
+		</div>
+
+<!-- #2 -->
+
+        <div class=item_container>
+
+            <!-- upper row of item -->
+            <div class="ui two column grid">
+
+                <!-- thumbnail -->
+                <div class="four wide column" style=padding-right:0px>
+                    <div class="ui left tiny images">
+                        <img src="images/eto.jpg" >
+                    </div>
+                </div>
+
+                <!-- description panel -->
+                <div class="seven wide column" style=padding-right:0px>
+                    
+                    <!-- Judul -->
+                    <div class="ui box-header" >
+                        Eto Misa PP
+                    </div>
+
+                    <!-- Price and Button -->
+                    <div class="item content-box" style=background:#fbfbfc;>
+                        <div class="ui grid">
+                            
+                                <h5 style=color:#999;margin-top:15px;font-weight:normal;>
+                                    <strong> Rp. 25.000</strong>
+                                </h5>        
+                            
+
+                            
+                                <div class="right floated column">
+                                    <button style=height:40px class='ui button orange floated right'>
+                                        Q.B
+                                    </button>                
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- end of upper row -->
+
+
+            <div class="ui three column grid" style=margin-top:-30px;margin-bottom:5px;height:10px;>
+
+                <div class=column>
+                </div>
+
+                <div class=column>
+                  <h4 style=font-size:15px;color:red>  20h:33m </h4>
+                </div>
+
+                <div class=column>
+                </div>
+            </div>
+
+
+            <!-- action buttons row -->
+            <div class="ui four column grid">
+
+                <div class="column">
+                    <button class="unwatchBtn ui tiny red button" >
+                        Unwatched
+                    </button>
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="six wide column">
+                    <button class="BIN ui tiny gray button" >
+                        Request BIN
+                    </button>
+                </div>               
+
+
+            </div>
+
+        </div>
+
+        
+
+<!-- #2 -->
+
+        <div class=item_container>
+
+            <!-- upper row of item -->
+            <div class="ui two column grid">
+
+                <!-- thumbnail -->
+                <div class="four wide column" style=padding-right:0px>
+                    <div class="ui left tiny images">
+                        <img src="images/kamata natsuki.jpg" >
+                    </div>
+                </div>
+
+                <!-- description panel -->
+                <div class="seven wide column" style=padding-right:0px>
+                    
+                    <!-- Judul -->
+                    <div class="ui box-header" >
+                        Kamata Natsuki grav Magazine
+                    </div>
+
+                    <!-- Price and Button -->
+                    <div class="item content-box" style=background:#fbfbfc;>
+                        <div class="ui grid">
+                            
+                                <h5 style=color:#999;margin-top:15px;font-weight:normal;>
+                                    <strong> Rp. 125.000</strong>
+                                </h5>        
+                            
+
+                            
+                                <div class="right floated column">
+                                    <button style=height:40px class='ui button orange floated right'>
+                                        Q.B
+                                    </button>                
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- end of upper row -->
+
+
+            <div class="ui three column grid" style=margin-top:-30px;margin-bottom:5px;height:10px;>
+
+                <div class=column>
+                </div>
+
+                <div class=column>
+                  <h4 style=font-size:15px;color:red>  18:35m </h4>
+                </div>
+
+                <div class=column>
+                </div>
+            </div>
+
+
+            <!-- action buttons row -->
+            <div class="ui four column grid">
+
+                <div class="column">
+                    <button class="unwatchBtn ui tiny red button" >
+                        Unwatched
+                    </button>
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="six wide column">
+                    <button class="BIN ui tiny gray button" >
+                        Request BIN
+                    </button>
+                </div>               
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+</div>
+
+</body>
+
+
+
+
+
+
+<!-- 
+        <div class=item_container>
+
+            <div class="ui four grid">
+
+                <div class="four wide column">
+                    <div class="ui left tiny images">
+                        <img src="images/circle_user.ng" >
+                    </div>
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="eight wide column">
+                    <div class="ui box-header" >
+                        Item #1
+                    </div>
+
+                    <div class="item content-box" style=background:#fbfbfc;>
+                        Description
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="ui four column grid">
+
+
+                <div class="column">
+                    <button class="unwatchBtn ui tiny red button" >
+                        Unwatched
+                    </button>
+                </div>
+
+                <div class="column">
+                </div>
+
+                <div class="six wide column">
+                    <button class="BIN ui tiny gray button" >
+                        Request BIN
+                    </button>
+                </div>               
+
+
+            </div>
+
+        </div> -->
